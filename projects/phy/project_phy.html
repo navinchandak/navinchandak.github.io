@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<body>
+<div id="contain">
+<script type="text/javascript" >x(); </script>
+
+I have done a few projects till now which I would like to describe now. (In order of how much I liked my work ;) ) </br>
+</br>
+1. Physics Engine - This is perhaps the toughest project which I have done till now. I would now like to describe the algorithm behind the Physics Engine that we had built. </br>
+<u>Collisions between two blocks</u> - At each discrete step, consider any two rectangles. If the distance between these two rectangles is more than half of the sum of the diagonals of the two rectangles, then a collision is definitely not possible. If the distance is lesser then I do the following to check for collisions.</br>
+<u> Finding point of intersection </u>Take a vertex of the rectangle and the other rectangle. Now we need to find the point at which this vertex and the rectangle will intersect. To do this, find the equation of the line from the vertex to the rectangle. The direction of this line should be the velocity of this vertex minus the velocity of the COM of the rectangle. Let the point where this line meets the rectangle be A. Now A is not the correct point of intersection because we had not considered the rotational motion of A while finding this point A. However A is not very far from the actual point of intersection of the vertex and the rectangle. So we again take this point, find the velocity of this point (translation + rotational) and then use it to find the relative velocity of A wrt the vertex we had. Now we again draw a line from the vertex whose speed and direction is as per the new relative velocity. We recurse this process 15-20 times to reach as close as possible to the actual point of intersection </br>
+Now do the above procedure for each vertex with the opposite rectangle. If there is a intersection of the line with the other rectangle and the distance can be covered in one time-step then a collision has been detected </br>
+Note: The way of collision-detection is not really two-way. So if there is a collision between block A and block B, then detectCollision function for A may not give true. Because the vertices of A may not really be colliding with B</br>
+<u>Changing the state</u> If collision for a block has been detected, then basic physics has been used to change the state of the blocks. All the class 12 equations are used to find the final state of the block using coeff of restitution, velocities, angular velocities and so on. And then the collision-detection process is repeated for all the blocks again.</br>
+<u>Moving the objects</u>Once the state of all the blocks are changed, then move them all. It is important not to move the blocks just after changing the state of a particular block. It can lead to dangerous things, like blocks going inside one-another (;))
+<u>Problems</u> When objects come very close to each other, then number of collisions increase in number to a great extent. 
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+</div>
+</body>

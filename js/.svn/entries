@@ -1,0 +1,54 @@
+8
+
+dir
+6
+https://github.com/wenderen/homepage/trunk/js
+https://github.com/wenderen/homepage
+
+
+
+2013-06-07T10:29:41.000000Z
+1
+rohan.prinja
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cc3ea8f7-1dfc-aa53-bfb2-ce57b7db7bff
+
+jquery-1.10.0.min.js
+file
+
+
+
+
+2013-06-07T10:30:50.000000Z
+00ff34b67a328f219fa3ae2423d4f252
+2013-06-07T10:29:41.000000Z
+1
+rohan.prinja
+has-props
+
+bootstrap.min.js
+file
+
+
+
+
+2013-06-07T10:30:50.000000Z
+d700a93337122b390b90bbfe21e64f71
+2013-06-07T10:29:41.000000Z
+1
+rohan.prinja
+has-props
+

@@ -1,0 +1,244 @@
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<body>
+	<script type="text/javascript" src="js/head.js"> </script>
+	<script type="text/javascript" src="js/jquery.min.js"> </script>
+	<script type="text/javascript" src="js/bootstrap.min.js"> </script>
+
+	<script type="text/javascript" >x(); highlight("projects.html");</script>
+		<div id="contain">
+
+<div class="accordion" id="acc2"> <div class ="accordion-group">
+<h3>Internships </h3>
+<!-- New Project  -->
+<div id="CQT" class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" onclick="addImage(this)" data-parent="#acc2" href="#CQTD">
+- <span class="subhead" >Theoretical Reserarch and Literature Study</span> <span class="pmd"> (under Prof Rahul Jain at National University of Singapore) </span>
+</a> </div>
+<div id="CQTD" class="accordion-body collapse  "><div class="accordion-inner"> Read, and understood the following research papers. And then presented them before <a href="http://www.comp.nus.edu.sg/~rahul/">Prof Rahul Jain</a> and some PhD students.  <ul>
+<li>Communication Complexity over noisy channels (Error correcting codes) 
+	<ul> <li> <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=556671">Coding for interactive communication</a> by Leonard J. Schulman 
+		  <li> <a href="http://dl.acm.org/citation.cfm?id=1993659">Towards Coding for Maximum Errors in Interactive Communication</a> by Mark Braverman, and Anup Rao
+	  	  <li> <a href="http://www.wisdom.weizmann.ac.il/~ranraz/publications/PInteractiveCapacity.pdf">Interactive Channel Capacity</a> by Gillat Kol and Ran Raz
+	</ul>
+<li>Linear Algebra (Non-negative and psd ranks in particular)
+	<ul> <li> <a href="http://arxiv.org/abs/1205.0044">A singly-exponential time algorithm for computing non-negative rank</a> by Ankur Moitra
+		  <li> <a href="http://arxiv.org/abs/0708.4149">On the complexity of non-negative matrix factorization</a> by Stephen Vavasis
+	</ul>
+</ul>
+I also tried to find out some good ways to find the positive semi-definite rank of a matrix but didn't suceed to find anything interesting.
+</div> </div>
+
+
+<!-- New Project  -->
+<div id="healthify" class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" onclick="addImage(this)" data-parent="#acc2" href="#healthifyD">
+- <span class="subhead" >Diet Planner</span> <span class="pmd"> (at HealthifyMe, a web-based startup) </span>
+</a> </div>
+<div id="healthifyD" class="accordion-body collapse  "><div class="accordion-inner"> 
+		<!-- <img class="pimgl" src="healthify/img1.png" height=145px width=300px /> -->
+<ul>
+<li> Developed heuristic algorithms for suggesting a diet plan to a user given the nutrient values of all food items, users's previous logs of items eaten, and the recommended levels of nutrients in a good diet
+<li> Developed methods for understanding the types of items the user like
+<li> Developed methods for suggesting feasible ratios of food items, and suggesting a complete meal
+<li> Implemented the logic in <a href="http://djangoproject.com"> Django</a>, a python based framework, and UI in html, javascript, and jQuery
+</ul>	
+</div> </div>
+
+
+
+<!-- New Project  -->
+<div id="graph" class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#acc2" onclick="addImage(this)" href="#graphD">
+
+- <span class="subhead" > Graph Visualization </span> <span class="pmd"> (Guide: Prof Ganesh Ramakrishnan) </span> 
+</a> </div>
+<div id="graphD" class="accordion-body collapse  "><div class="accordion-inner"> 
+	<!-- <img class="pimgr" src="graph/img1.png" /> -->
+	<ul>
+	<li> Wrote a <a href="http://www.gephi.org">Gephi</a> plug-in to generate data from a given jar file and display it in the Gephi interface
+	<li> Read and understood the force-based algorithm(alongwith the Barnes-Hut optimization) that <a href="http://www.arborjs.org">ArborJs</a>(an open-source graph visualization tool) uses to display nodes
+	<li> Extended the features of <a href="http://www.arborjs.org">ArborJS</a> : zooming and dragging of the canvas, tooltip for viewing detailed information of a node, displaying name of a node in variable size dependent on zoom level etc
+	</ul>
+<a href="projects/graph/index.html">Click here</a> to view the arborjs extended graph visualization tool.</br>
+<a href="http://github.com/navinchandak/arborJS">Click here</a> to goto the github repo </br>
+</div> </div>
+
+
+<hr>
+<hr>
+<h3>Algorithmic Projects </h3>
+
+
+
+<!-- New Project  -->
+<div id="bookParser" class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" onclick='addImage(this,"img1.jpg")' data-parent="#acc2" href="#bookParserD">
+- <span class="subhead"></span> <span class="pmd"> Book Parser(Guide:Prof Varsha Apte) </span>
+</a> </div>
+<div id="bookParserD" class="accordion-body collapse  "><div class="accordion-inner"> 
+<ul>
+<li> Vector-quantization technique: Used neural network to classify pixels into groups and finding a representative vector 
+<li> JPEG Compression : Used the technique of Discrete Cosine Transform. DCT basically transforms a set of points into terms of sum of cosine functions oscillating at different frequencies. But the good thing is that because the pixel values in nearby values are less, so the higher terms are zero. Then entropy encoding is done to exploit this property.
+<li> Compared the quality(using PSNR values), compression ratio, and rendering time of the two methods. 
+</ul>
+	<a href="projects/imageCompress/report.pdf">Click here</a> for the Project report.</br>
+</div> </div>
+
+
+
+<!-- New Project  -->
+<div id="imageCompress" class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" onclick='addImage(this,"img1.jpg")' data-parent="#acc2" href="#imageCompressD">
+- <span class="subhead" >Image Compression using various techniques and comparative analysis</span> <span class="pmd"> (Guide:Prof Varsha Apte) </span>
+</a> </div>
+<div id="imageCompressD" class="accordion-body collapse  "><div class="accordion-inner"> 
+<ul>
+<li> Vector-quantization technique: Used neural network to classify pixels into categories 
+<li> JPEG Compression : Used the technique of Discrete Cosine Transform. DCT basically transforms a set of points into terms of sum of cosine functions oscillating at different frequencies. But the good thing is that because the pixel values in nearby values are less, so the higher terms are zero. Then entropy encoding is done to exploit this property.
+<li> Compared the quality(using PSNR values), compression ratio, and rendering time of the two methods. 
+</ul>
+<a href="projects/imageCompress/report.pdf">Click here</a> for the Project report.</br>
+	<a href="https://github.com/navinchandak/imageCompression">Click here</a> for the github repo</br>
+</div> </div>
+
+
+<!-- New Project  -->
+<div id="chess" class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#acc2" href="#chessD" onclick="addImage(this)" >
+- <span class="subhead"> Chess </span> <span class="pmd"> (Prof Amitabha Sanyal, IIT Bombay) </span> 
+</a> </div>
+<div id="chessD" class="accordion-body collapse  "><div class="accordion-inner"> 
+<!-- <img src="chess/img1.png" class="pimgl"/> -->
+<ul>
+<li> Designed one-player Chess using Minimax Algorithm and Alpha-beta pruning in Scheme (Scheme is a functional programming language)
+<li> Used <a href="http://www.gnu.org/software/xboard/">XBoard</a>, a graphics engine for chess; programmed the code to interact with XBoard
+<li> Implemented features like saving the game, undoing moves, editing board positions
+<li> Secured the highest credit in the batch for this project
+</ul>
+<a href="http://www.cse.iitb.ac.in/~navinchandak/chess/report.pdf">Click here</a> for the project report.</br>
+<a href="https://github.com/navinchandak/lazyBoy">Click here</a> to goto the github repo.</br>
+</div> </div>
+
+
+<!-- New Project  -->
+<div id="phy" class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" onclick="addImage(this)" data-parent="#acc2" href="#phyD">
+- <span class="subhead" > Physics Engine </span> <span class="pmd"> (under Institute Technical Summer Project) </span>
+</a> </div>
+<div id="phyD" class="accordion-body collapse  "><div class="accordion-inner"> 
+<!--		<img class="pimgl" src="phy/img1.png" /> <img class="pimgl" src="phy/img2.png"   /> -->
+<ul>
+<li> Developed code for simulating rectangular rigid blocks in 2-dimensions in real time
+<li> Devised an algorithm for collision detection and collision response
+<li> Used mathematics and laws of physics to simulate gravity, translation, rotation and collisions
+<li> Programmed the code from scratch in java-script, without the use of any physics engine library
+<li> Used HTML Canvas for display and animation of the rectangular blocks
+</ul>
+	<a href="projects/phy/index.html">Click here</a> for the actual simulation.</br>
+</div> </div>
+
+
+
+
+<!-- New Project  -->
+<div id="chess" class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#acc2" href="#chessD" onclick="addImage(this)" >
+- <span class="subhead"> Chess </span> <span class="pmd"> (Prof Amitabha Sanyal, IIT Bombay) </span> 
+</a> </div>
+<div id="chessD" class="accordion-body collapse  "><div class="accordion-inner"> 
+<!-- <img src="chess/img1.png" class="pimgl"/> -->
+<ul>
+<li> Designed one-player Chess using Minimax Algorithm and Alpha-beta pruning in PLT Scheme
+<li> Used <a href="http://www.gnu.org/software/xboard/">XBoard</a>, a graphics engine for chess; programmed the code to interact with XBoard
+<li> Implemented features like saving the game, undoing moves, editing board positions
+<li> Secured the highest credit in the batch for this project
+</ul>
+<a href="http://www.cse.iitb.ac.in/~navinchandak/chess/report.pdf">Click here</a> for the project report.</br>
+<a href="https://github.com/navinchandak/lazyBoy">Click here</a> to view the Github repository.</br>
+</div> </div>
+
+
+<!-- New Project  -->
+<div id="poker" class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#acc2" href="#pokerD" onclick="addImage(this)">
+- <span class="subhead"> Poker Master </span> <span class="pmd"> (Prof Deepak B. Phatak, IIT Bombay) </span> 
+</a> </div>
+<div id="pokerD" class="accordion-body collapse  "><div class="accordion-inner"> 
+<ul>
+<li>  Made a one-player Poker game with GUI in C++ using EZ Windows Graphics Library
+<li> Created a database which stores winning-probability for every card-combination using another
+  database which stores the winning chance for the hands
+<li> Developed mathematical expressions by hit-and-trial for taking decisions at any point of time based
+  on probability of winning (from the database) and fraction of money spent
+</ul>
+</div> </div>
+
+<h3>Other CS Projects </h3>
+<!-- New Project  -->
+<div  id="rg" class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#acc2" href="projects.html#rgD" onclick="addImage(this)">
+- <span class="subhead" >Rube Goldberg Simulation using Box2D</span> <span class="pmd"> (Guide: Prof Parag Chaudhuri) </span>
+</a> </div>
+<div id="rgD" class="accordion-body collapse  "><div class="accordion-inner"> 
+	<!--	<img class="pimgl" src="./rube/img1.png" height=145px width=300px /> -->
+<ul>
+<li> Designed a Rube Goldberg machine and then built a simulation of it using <a href="http://www.box2d.org">Box2d,</a> a physics simulator engine. 
+<li>Analysed various performance metrics of the code by using timing functions of C++, drawing graphs using gnuplot and then analysing them
+<li> Wrote a code for converting the report of the project written in latex to html page, so that any further changes in report could be done in only one place and reflected in both.  
+</ul>	
+<a href="http://www.youtube.com/watch?v=0kqIChxrw-4">Click here</a> to view the Box2d simulation video.</br>
+<a href="https://github.com/navinchandak/cs296">Click here</a> to view the github repo for the project.</br>
+<a href="projects/rg/g05_project.pdf">Click here</a> to view the report in pdf.<a href="projects/rg/g05_report.html">Click here</a> for the html version of the same pdf .
+</div> </div>
+
+
+<!-- New Project  -->
+<div id="bargain" class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#acc2" href="#bargainD" onclick="addImage(this)">
+- <span class="subhead">Bargain Bumble</span> <span class="pmd"> (at Yahoo HackU!) </span> 
+</a> </div>
+<div id="bargainD" class="accordion-body collapse  "><div class="accordion-inner"> 
+<!-- <img  class="pimgr" src="bargain/img1.png"/> -->
+<ul>
+<li> Designed and developed a bidding portal for IIT Bombay using PHP, MySQL with metro interface
+<li> Developed an algorithm for recommending products based on user-interests(which is required for signup) and market-trends.
+<li> Implemented features like following an item, receiving notifications of followed items, section which contains items about to be auctioned off soon, receiving notifications when someone wins an auction etc
+ </ul>
+ <a href="projects/bargain/bargain.tar" >Click here</a> to download the code.
+</div> </div>
+
+
+
+<h3>Non-CS Projects </h3>
+<!-- New Project  -->
+<div id="ic102" class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#acc2" href="#ic102D" onclick="addImage(this)">
+- <span class="subhead"  > Statistical Analysis and Interpretation of Data </span> <span class="pmd"> (Prof Milind Sohoni, IIT Bombay) </span> 
+</a> </div>
+<div id="ic102D" class="accordion-body collapse  "><div class="accordion-inner"> 
+<!-- <img src="ic102/img1.png" class="pimgl"/> -->
+<ul>
+<li> Analyzed literacy rate, unemployment, population, sex ratio, caste ratio etc for two sub-districts
+<li> Identified the major social issues using statistical tools like linear regression and correlation
+<li> Established relation between above parameters and proposed solutions to the problems
+</ul>
+<a href="projects/ic102/Taluka_Assignment.pdf">Click here</a> to view/download the project report.
+</div> </div>
+
+
+<div id="fft" class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#acc2" href="#fftD" onclick="addImage(this)">
+- <span class="subhead"  >Implementation of fft on Xilinx FPGA</span> <span class="pmd"> (Prof Ashwin Gumaste, IIT Bombay) </span> 
+</a> </div>
+<div id="fftD" class="accordion-body collapse  "><div class="accordion-inner"> 
+<!-- <img src="ic102/img1.png" class="pimgl"/> -->
+<ul>
+<li> Wrote the VHDL code for fft ; Used the 8-point radix-2 decimation in frequency algorithm for finding the fft for the given input
+<li> Deployed the code on a Xilinx FPGA board
+<li> Inputs could be given on the board (debouncing was used), and the output would be given using the LED lights.
+<li> Used states for taking input/ giving output in stages; and the fft calculation was purely combinational 
+</ul>
+<a href="projects/fft/algo.pdf">Click here</a> for the algorithm description or <a href="projects/fft/doc.pdf">click here</a> for the documentation of the project.
+</div> </div>
+
+
+
+
+</div></div>
+
+
+
+
+
+
+
+	</div>
+	</body>
