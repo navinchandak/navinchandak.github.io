@@ -17,7 +17,6 @@ function x ( x,y) {
 						//document.write( '<td><a href="'+s+'interests.html">Interests</a></td>' )
 						//document.write( '<td><a href="'+s+'index.html">MY DIR	</a></td>' )
 						document.write( '<td><a href="'+s+'contact.html">CONTACT</a></td> ' )
-						document.write( '<td><a href="'+s+'ra">MY DIR</a></td>' )
 						document.write( '</tr> </table>' )
 }
 function highlight(x) {
